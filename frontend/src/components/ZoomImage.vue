@@ -608,18 +608,21 @@ onUnmounted(() => {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.6); 
   color: #fff;
+  border: 2px solid #fff !important;
   border-radius: 50%;
   width: 44px;
   height: 44px;
   min-height: 44px;
   z-index: 10;
-  transition: background 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .zoom-close-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
 }
 
 .zoom-hint {
